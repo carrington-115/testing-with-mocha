@@ -17,3 +17,9 @@ module.exports = {
   testEnvironment: "node",
 };
 ```
+
+- To run the test for the specific test file path
+
+```bash
+npx jest <path>
+```
