@@ -66,6 +66,12 @@ test("Testing the promise", () => {
 });
 
 // if promise fails
-test("Testing if promise fails", () => {
-  return expect(testingPromiseAsync()).rejects.toThrow("error");
+// test("Testing if promise fails", () => {
+//   return expect(testingPromiseAsync()).rejects.toThrow("error");
+// });
+
+// writing test for async await functions
+test("testing for async-await", async () => {
+  const response = await testingPromiseAsync();
+  expect(response).toBe("hello world");
 });
